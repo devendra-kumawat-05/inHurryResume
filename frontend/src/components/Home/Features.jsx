@@ -1,8 +1,9 @@
 import React from "react";
+import { Zap } from "lucide-react";
 
 const Features = () => {
   return (
-    <>
+    <div id="features" className="flex flex-col items-center my-20">
       <style>{`
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
             
@@ -10,12 +11,18 @@ const Features = () => {
                     font-family: 'Poppins', sans-serif;
                 }
             `}</style>
-      <h1 className="text-3xl font-semibold text-center mx-auto">
-        Powerful Features
+      <div className="flex items-center gap-2 text-sm text-[#1A73E8] bg-[#1A73E8]/10 rounded-full px-6 py-1.5">
+        <Zap width={14} />
+        <span>Simple and Easy Process</span>
+      </div>
+
+      <h1 className="text-3xl font-semibold text-center mx-auto mt-14">
+        Build your resume
       </h1>
-      <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
-        Everything you need to manage, track, and grow your finances, securely
-        and efficiently.
+      <p className="text-sm text-slate-500 text-center mt-6 max-w-2xl mx-auto">
+        Our streamlined process makes it easy to create a standout resume that
+        reflects your skills and experience with-in minutes with intelligent
+        AI-powered tools and features.
       </p>
 
       <div className="flex items-center justify-center flex-wrap gap-6 mt-20 px-4 md:px-0">
@@ -116,7 +123,7 @@ const Features = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
