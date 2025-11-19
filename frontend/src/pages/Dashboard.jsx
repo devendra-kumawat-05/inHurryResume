@@ -226,7 +226,7 @@ const Dashboard = () => {
                   type="file"
                   id="resume-input"
                   accept=".pdf"
-                  hidden
+                  className="hidden"
                   onChange={(e) => {
                     setresume(e.target.files[0]);
                   }}
